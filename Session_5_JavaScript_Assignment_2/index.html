@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Showing Current Date and Time </title>
+	</head>
+	<body>
+		<p> Hi...See this is the current time and Date </p>
+		<script language="javascript" type="text/javascript">
+            var a = new Date();
+			var hours = a.getHours();
+			var minutes = a.getMinutes();
+			if (minutes < 10)
+			{
+			minutes = "0" + minutes;
+			}
+			document.write(hours + ":" + minutes + " ");
+			if(hours > 11)
+			{
+			document.write("PM");
+			} 
+			else 
+			{
+			document.write("AM");
+			}
+      </script>
+	
+	</body>
+	
+
+</html>
